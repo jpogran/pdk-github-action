@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM puppet/pdk:latest
 
 COPY LICENSE README.md /
 
