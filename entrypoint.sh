@@ -4,4 +4,9 @@ echo "hello $1"
 
 echo "hello $INPUT_LIST"
 
-pdk validate
+if [ $INPUT_LIST = 'true' ]; then
+  echo "executing list"
+  pdk validate --list
+else
+  pdk validate
+fi
